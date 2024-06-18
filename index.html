@@ -29,14 +29,42 @@
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Training</a></li>
-                    <li><a href="#">Countries</a></li><li>
-                        <a href="#">Blogs</a></li>
+                    <li><a href="#">Countries</a></li>
+                    <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        <div class="img-slider">
+            <div class="slider-wrapper">
+                <img src="images/slider-1.jpg" alt="Study abroad with Invictus!!">
+                <img src="images/slider-2.jpg" alt="Our services">
+                <img src="images/slider-3.jpg" alt="Success stories">
+                <img src="images/slider-4.jpg" alt="Our latest blogs">
+            </div>
+            <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <section class="cards">
+            <div class="container">
+                <div class="card" style="background-color: white;">
+                    <h3 style="text-align: center;">Professional Advice</h3>
+                    <p style="text-align: center;">We at Invictus help students reach their study abroad goals. Our professional advisers advise on academic programmes, job opportunities, and other factors.</p>
+                </div>
+                <div class="card" style="background-color: red;">
+                    <h3 style="text-align: center; color: white;">Affordable Price</h3>
+                    <p style="text-align: center;color: white;">We strive to offer competitive and transparent pricing for our services, ensuring that students can achieve their study abroad dreams without breaking the bank.</p>
+                </div>
+                <div class="card" style="background-color: white;">
+                    <h3 style="text-align: center;">Expert Advisors</h3>
+                    <p style="text-align: center;">Our study abroad experts at Invictus Consulting Services have years of experience. Our advisors are dedicated to student success and high-quality service.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="hero">
             <div class="container">
                 <h2>Welcome to Invictus</h2>
@@ -55,5 +83,7 @@
             <p>&copy; 2024 Invictus. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

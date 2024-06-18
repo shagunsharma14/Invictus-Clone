@@ -117,4 +117,82 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
+
+}
+/* Add this to your existing style.css */
+
+.img-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.slider-wrapper {
+    display: flex;
+    overflow: hidden; /* Hide overflow to prevent image overflow on smaller screens */
+}
+
+.slider-wrapper img {
+    width: 100%; /* Make images responsive */
+    height: 600px; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev {
+    left: 1rem;
+}
+
+.next {
+    right: 1rem;
+}
+/* Add this to your existing style.css */
+
+.cards {
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.cards .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 4.2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
 }
