@@ -8,10 +8,49 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.top-bar {
+    background-color: white;
+    padding: 1rem 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
 header {
     background-color: white;
     color: black;
-    padding: 1rem 0;
+    padding: 0.7rem 0;
 }
 
 header .container {
@@ -23,9 +62,8 @@ header .container {
     padding: 0 1rem;
 }
 
-header h1.logo {
-    margin: 0;
-    color: blue;
+header .logo {
+    width: 250px; /* Adjust the width as necessary */
 }
 
 header nav ul {
