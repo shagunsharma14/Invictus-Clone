@@ -9,8 +9,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 1rem 0;
 }
 
@@ -23,8 +23,9 @@ header .container {
     padding: 0 1rem;
 }
 
-header h1 {
+header h1.logo {
     margin: 0;
+    color: blue;
 }
 
 header nav ul {
@@ -38,14 +39,18 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
 }
 
+header nav ul li a.active {
+    color: red;
+}
+
 header nav ul li a:hover {
-    background-color: #575757;
+    background-color: #f0f0f0;
 }
 
 .hero {
